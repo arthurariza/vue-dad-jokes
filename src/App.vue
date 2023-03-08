@@ -1,17 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
-<template>
-  <header>
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-  </header>
-
-  <RouterView />
+<template >
+  <main class="grid place-items-center h-screen bg-slate-100">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
