@@ -1,10 +1,10 @@
 <template>
-  <section class="w-1/2 h-1/5">
+  <section class="w-1/2 min-h-1/5">
     <h1 class="font-bold text-3xl">Random Dad Joke</h1>
     <p class="text-gray-500 text-sm">About {{ jokesStore.randomJoke.type }}</p>
 
     <LoadingSpinner :loading="jokesStore.loading"/>
-    
+
     <article v-if="! jokesStore.loading" class="space-y-4 bg-white p-4 rounded-xl drop-shadow-lg w-full h-full mt-2">
       <p class="text-xl">{{ jokesStore.randomJoke.setup }}</p>
 
