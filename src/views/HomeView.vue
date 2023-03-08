@@ -1,4 +1,6 @@
 <script setup>
+import {useJokesStore} from "@/stores/JokesStore";
+const jokesStore = useJokesStore();
 
 </script>
 
